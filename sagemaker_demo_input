@@ -1,0 +1,21 @@
+#for inference file
+model_type = "MultiClass Classification"
+data_shape = "(,4)"
+training_script_path = "/Users/neel/Developer/deploy_wizard/iris_model_training/training.py"
+inference_dir = "/Users/neel/Developer/sagemaker_test2/inference"
+#for docker
+local_image = iris_sagemaker
+model_dir = /Users/neel/Developer/models
+#for aws 
+aws_id = 407683973276
+aws_region = us-west-2
+ecr_repo = sagemaker_models/iris2
+#for s3
+model_path = /Users/neel/Developer/models/iris_model.pkl
+s3_bucket = neel-sagemaker-models
+s3_key = iris_model2/model.tar.gz
+#for terraform
+terraform_dir = /Users/neel/Developer/sagemaker_test2/terraform
+modelname = iris2
+instancetype = ml.t2.medium
+

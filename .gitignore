@@ -1,0 +1,11 @@
+__pycache__/
+dev/
+iris_model*
+.hcl
+*.tfstate
+*.tfstate.backup
+*.terraform.lock.hcl
+.terraform/
+k8s_files/
+aws_terraform_files/
+.env

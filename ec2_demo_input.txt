@@ -1,0 +1,23 @@
+model_type = 'Multiclass Classification'
+data_shape = '(, 4)'
+input_file = '/Users/neel/Developer/deploy_wizard/iris_model_training/training.py'
+inference_script_path = '/Users/neel/Developer/deploy_wizard/iris_model_inference/inference.py'
+inference_dir=''/Users/neel/Developer/ec2_iris
+#saving the requirements.txt to a file
+requirements_txt_path = '/Users/neel/Developer/deploy_wizard/iris_model_training/requirements.txt'
+model_path = '/Users/neel/Developer/deploy_wizard/iris_model_inference/iris_model.pkl'
+params = {
+    "vpc_id": "vpc-0f0aea174086b6625",
+    "region": "us-west-1",
+    "subnet_id": "subnet-070d54662e68443ed",
+    "instance_type": "t2.micro",
+    "security_group_id": "sg-03aa3023dd84cf4a5",
+    "key_pair_name": "neel_test",
+    "ami_id": "ami-08d4f6bbae664bd41",
+    "model_port": 8000,
+    "model_name": "iris_model",
+    "image_name": "neel26d/iris_model_inference:latest",
+    "container_name": "iris_model",
+    "main_tf": base_main_tf,
+    "vars_tf": base_vars_tf
+}
